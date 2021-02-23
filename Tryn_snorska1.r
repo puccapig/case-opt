@@ -1,4 +1,4 @@
-#My-IBM-Cloud
+#My-IBM-Cloud Tryn_snorska1.r
 #Rachel Yuan Nong Mikkelsen 
 #2021-February-23, Akademibokhandeln SUPER REA day! Uppsala SE
 #look at 8x100 D1 cells by day
