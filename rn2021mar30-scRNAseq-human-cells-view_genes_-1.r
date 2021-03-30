@@ -1,6 +1,6 @@
 #Rachel Yuan Nong Mikkelsen 2021-02-16 Uppsala Sweden
 #2021-03-29 copied and modified to work in this file
-#reference datasets are drawn from those chosen by Human_Proteome_Atlas/Cell_atlas, 1000 cells each...
+#reference datasets are drawn from those chosen by Human_Protein_Atlas/Cell_atlas, 1000 cells each...
 
 print("...to view gene:")
 gene1_to_views <- readline()
@@ -35,8 +35,8 @@ gene1_to_views[2] <- as.character(ref_human[which(ref_human[,3] == gene1_to_view
 		my_tsne_axies <- as.character(my_tsne_axies)
 		my_tsne_axies <- read.csv(my_tsne_axies)
 		
-		if(nchar(rownames(matrix_in)) != 15){gene1_to_views1 <- gene1_to_views[1]}
-		if(nchar(rownames(matrix_in)) == 15){gene1_to_views1 <- gene1_to_views[2]}
+		if(nchar(rownames(matrix_in)[1]) != 15){gene1_to_views1 <- gene1_to_views[1]}
+		if(nchar(rownames(matrix_in)[1]) == 15){gene1_to_views1 <- gene1_to_views[2]}
 		expression_code <- matrix_in[match(gene1_to_views1, rownames(matrix_in), nomatch = 0),]
 		expression_code <- as.data.frame(t(expression_code))
 		expression_code[expression_code[,1] > 0, 2] <- c("blue")
