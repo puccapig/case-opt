@@ -26,6 +26,7 @@ gene1_to_views[2] <- as.character(ref_human[which(ref_human[,3] == gene1_to_view
 	par(mfrow = c(l,w), cex = 0.4)
 	
 	for(k in 1:dim(human_cell_tsne_file)[1]){
+		gene1_to_views1 <- c("__")
 		matrix_in <- human_cell_tsne_file[k,2]
 		matrix_in <- read.csv(matrix_in, header = TRUE)
 		rownames(matrix_in) <- matrix_in[,1]
