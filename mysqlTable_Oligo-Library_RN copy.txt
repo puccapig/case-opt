@@ -1,0 +1,12 @@
+# mysqlTable_OligoLibrary_RN.txt
+# to put sequences used in experiments from 2006, note that this table does not include sequences from DATABASE ****UU_2fold. The two databases will need to be used together.
+# Rachel Yuan Nong 2018-April-03
+
+
+CREATE DATABASE RACHELYN_UU_2006_20--;
+
+CREATE TABLE `SE****UU_RachelYN` ( `#Idtag` varchar(3630),`Name` varchar(3630), `Sequence` varchar(3630), ...`Other` varchar(3630)) ENGINE = MyISAM DEFAULT CHARSET = latin1;
+
+LOAD DATA INFILE '~/UU-RachelYN2018/TO_MySQL-****.csv' INTO TABLE `SE****UU_RachelYN` FIELDS TERMINATED BY ';' ENCLOSED BY '' LINES TERMINATED BY '\r';
+
+ALTER TABLE `SE****UU_RachelYN` ADD `id` INT UNSIGNED NOT NULL AUTO_INCREMENT FIRST, ADD PRIMARY KEY (id);
