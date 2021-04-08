@@ -1,3 +1,4 @@
+#Rachel Yuan Nong Mikkelsen 2021-APRIL-07, SE
 # mysqlTable_OligoLibrary_RN.txt
 # to put sequences used in experiments from 2006, note that this table does not include sequences from DATABASE ****UU_2fold. The two databases will need to be used together.
 # Rachel Yuan Nong 2018-April-03
