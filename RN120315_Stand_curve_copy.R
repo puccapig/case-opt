@@ -1,3 +1,5 @@
+#Rachel Yuan Nong Mikkelsen 2021-APRIL-07, SE
+#this code was used on 2012-March-15 +- some days/weeks/months/years probably. ./ IP:old Rudbeck
 library(drc)
 library(sfsmisc)
 library(Hmisc)
