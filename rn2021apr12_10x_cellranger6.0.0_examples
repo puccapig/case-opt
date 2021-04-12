@@ -1,3 +1,6 @@
+#Rachel Yuan Nong Mikkelsen 2021-APRIL-12, SE
+#MacBook Air 11' 2013, Apple Palo Alto 
+
 uu-guest-144-52:10xgenomics_SC3_v3_NextGem_DI_CellPlex_Human_PBMC_10k rachelnong$ cd ..
 uu-guest-144-52:today_temp rachelnong$ mkdir 10xgenomics_cellranger_6.0.0_raji_jurkat_cells
 uu-guest-144-52:today_temp rachelnong$ cd 10xgenomics_cellranger_6.0.0_raji_jurkat_cells/
