@@ -1,5 +1,6 @@
 #Rachel Yuan Nong Mikkelsen 2021-May-01, Uppsala Sweden
-#
+#2021-AUG-14 correct codes ^ adding as.character
+
 print('require a: gene_name, gene_ensembl_')
 print(a)
 
@@ -20,8 +21,8 @@ for(k in 1:length(a)){
 print('>>plot expression in a directed differentiation of fat cells experiment')
 par(mfrow = c(2,2), cex = 0.5)
 for(k in 1:length(a)){
-  gene1 <- a1[k]
-  gene1_en <- a[k]
+  gene1 <- as.character(a1[k])
+  gene1_en <- as.character(a[k])
   plot_name <- paste0(gene1, ' | SCRB-seq 2014 D1')
   boxplot(split(t(data_D1['HTR2C',]), as.factor(flasks_D1[,6])), main = plot_name)
 }
@@ -29,14 +30,14 @@ for(k in 1:length(a)){
 #plot single cell expression 1/0 | dataset: SCRB-seq
 print('>>expression range on day1/SCRB-seq')
 for(k in 1:length(a)){
-  b <- a1[k]
+  b <- as.character(a1[k])
   print(paste0('range ', b))
   print(range(cpm_data[b,]))
 }
 
 print('>>plot single cell expression 1/0 | dataset: SCRB-seq day1')
 for(k in 1:length(a)){
-  b <- a1[k]
+  b <- as.character(a1[k])
   b <- cpm_data[b,]
   b1 <- b
   for(i in 1:951){
