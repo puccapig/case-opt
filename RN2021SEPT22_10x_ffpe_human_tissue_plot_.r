@@ -1,4 +1,5 @@
 #Rachel Yuan Nong Mikkelsen 2021-SEPT-22
+#require 10x *_spatial_enrichment.csv
 
 print("MORANs I for gene:")
 more_gene <- readline()
