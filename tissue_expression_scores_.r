@@ -17,4 +17,4 @@ for(i in 1:step_wise_i){
 
 par(cex = 0.5)
 plot(step_wise_table[,1], step_wise_table[,2], pch = 19, col = "red")
-
+print("step_wise_table")
