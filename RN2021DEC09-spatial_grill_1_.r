@@ -1,6 +1,6 @@
 #Rachel Yuan Nong Mikkelsen 2021-December-09
 
-tissue_position <- read.csv("tissue_positions_list.csv", header = FALSE)
+tissue_position <- read.csv("tissue_positions_list.csv", header = FALSE) #example plot from 10x_visium_V1_Adult_Mouse_Brain
 
 plot(tissue_position[,3], -tissue_position[,4])
 
